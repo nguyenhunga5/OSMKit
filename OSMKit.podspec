@@ -8,7 +8,8 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/davidchiles/OSMKit', :tag => '0.2' }
   spec.requires_arc = true
 
-  spec.platform = :ios, "7.0"
+  spec.ios.deployment_target = '7.0'
+  spec.osx.deployment_target = '10.10'
   # spec.dependency "SpatialDBKit"
   spec.dependency 'AFNetworking', '~> 2.6'
   spec.dependency 'TBXML', '~> 1.5'
